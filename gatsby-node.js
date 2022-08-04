@@ -36,7 +36,6 @@ exports.createResolvers = createResolvers;
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
     const templates = {
-        matchsPosts: path.resolve("src/templates/match-details/index.jsx"),
         productsPosts: path.resolve("src/templates/products-details/index.jsx"),
         playersPosts: path.resolve("src/templates/players-details/index.jsx"),
         teamsPosts: path.resolve("src/templates/teams-details/index.js"),
@@ -84,18 +83,6 @@ exports.createPages = ({ actions, graphql }) => {
         }
     `).then((res) => {
         if (res.errors) return Promise.reject(res.errors);
-
-        //  Matchs Details Page
-        const matchsPosts = res.data.allMatch.nodes;
-        matchsPosts.forEach((node) => {
-            createPage({
-                path: `/match/${node.slug}`,
-                component: templates.matchsPosts,
-                context: {
-                    slug: node.slug,
-                },
-            });
-        });
 
         //  Products Details Page
         const productsPosts = res.data.allProducts.nodes;

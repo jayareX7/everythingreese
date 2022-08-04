@@ -18,19 +18,6 @@ module.exports = ({ createResolvers }) => {
                 },
             },
         },
-        Games: {
-            categories: {
-                resolve: async (source, args, context, info) => {
-                    const gameResult = source.categories.map((item) => {
-                        return {
-                            title: item,
-                            slug: slugify(item),
-                        };
-                    });
-                    return gameResult;
-                },
-            },
-        },
         Products: {
             categories: {
                 resolve: async (source, args, context, info) => {
