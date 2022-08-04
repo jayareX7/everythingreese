@@ -38,7 +38,7 @@ const BlogCard = ({ title, date, slug, dateSlug, image1 }) => {
                 <Link
                     to={`/${slug}`}
                     className="pl-11 text-sm font-medium sm:uppercase hover:text-primary relative 
-                    text-white 
+                    text-orange
                     after:absolute
                     content-after
                   after:bg-primary
@@ -52,7 +52,7 @@ const BlogCard = ({ title, date, slug, dateSlug, image1 }) => {
                     after:transition 
                     after:opacity-100"
                 >
-                    More Deatails
+                    More Details
                 </Link>
             </div>
         </div>

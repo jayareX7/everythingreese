@@ -104,10 +104,36 @@ module.exports = ({ node, actions, createNodeId }) => {
             },
         });
     }
-    // Match pages
-    if (node.internal.type === "PlayersJson") {
+    // Product pages
+    if (node.internal.type === "ProductsJson") {
         createNode({
-            id: createNodeId(`Players-${node.id}`),
+            id: createNodeId(`Products-${node.id}`),
+            parent: node.id,
+            title: node.title,
+            slug: slugify(node.title),
+            gameThum: node.gameThum,
+            categories: node.categories,
+            date: node.date,
+            updated: node.updated,
+            size: node.size,
+            installs: node.installs,
+            currentVersion: node.currentVersion,
+            inAppProducts: node.inAppProducts,
+            images: node.images,
+            buttons: node.buttons,
+            quoteText: node.quoteText,
+            content: node.content,
+            internal: {
+                type: "Products",
+                contentDigest: node.internal.contentDigest,
+            },
+        });
+    }
+
+    // Match pages
+    if (node.internal.type === "TesimonialsJson") {
+        createNode({
+            id: createNodeId(`Testimonials-${node.id}`),
             parent: node.id,
             title: node.title,
             name: node.name,
@@ -118,7 +144,7 @@ module.exports = ({ node, actions, createNodeId }) => {
             items: node.items,
             content: node.content,
             internal: {
-                type: "Players",
+                type: "Testimonials",
                 contentDigest: node.internal.contentDigest,
             },
         });

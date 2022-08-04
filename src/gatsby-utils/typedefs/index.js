@@ -2,16 +2,16 @@ const pagesDefs = require("./pages");
 const contentDefs = require("./allcontent");
 const generalDefs = require("./general");
 const matchDefs = require("./match");
-const gamesDefs = require("./games");
+const productsDefs = require("./products");
 const articlesDefs = require("./articles");
-const playersDefs = require("./players");
+const testimonialsDefs = require("./testimonials");
 
 module.exports = {
     pagesDefs,
     contentDefs,
     generalDefs,
     matchDefs,
-    gamesDefs,
+    productsDefs,
     articlesDefs,
-    playersDefs,
+    testimonialsDefs,
 };

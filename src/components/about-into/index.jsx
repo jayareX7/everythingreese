@@ -11,14 +11,14 @@ const AboutUsInto = ({ aboutusInto }) => {
                 </h3>
             )}
             {aboutusInto?.headings[1] && (
-                <h2 className="text-white font-bold uppercase mb-6">
+                <h2 className="text-orange font-bold uppercase mb-6">
                     {aboutusInto?.headings[1]?.content}
                 </h2>
             )}
             <div className="about_desc mb-8">
                 {aboutusInto?.items &&
                     aboutusInto.items.map((item) => (
-                        <p className="leading-8" key={item.id}>
+                        <p className="text-orange leading-8" key={item.id}>
                             {item.description}
                         </p>
                     ))}

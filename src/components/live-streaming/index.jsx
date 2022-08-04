@@ -41,16 +41,6 @@ const LiveStreaming = ({ title, image, video_link }) => {
                         />
                     </span>
                 </div>
-
-                <div className="live_streaming_text absolute bottom-0 left-1/2 transform -translate-x-1/2">
-                    <StaticImage
-                        src="../../data/images/live-video/text-mini-shape.webp"
-                        alt=""
-                    />
-                    <h3 className="text-white absolute bottom-0 inset-x-1/2 transform -translate-x-1/2 p-1 flex items-center justify-center w-full h-full font-bold uppercase text-xs  sm:text-sm md:text-22base lg:text-md">
-                        {title}
-                    </h3>
-                </div>
             </div>
             <Video
                 channel={video_channel}

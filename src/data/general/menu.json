@@ -15,34 +15,7 @@
         {
             "id": "menu-3",
             "text": "Body Butter",
-            "link": "/products",
-            "submenu": [
-                {
-                    "id": "menu-31",
-                    "text": "About Us Page",
-                    "link": "/about-us"
-                },
-                {
-                    "id": "menu-32",
-                    "text": "Games Page",
-                    "link": "/games"
-                },
-                {
-                    "id": "menu-33",
-                    "text": "FAQ's Page",
-                    "link": "/faq"
-                },
-                {
-                    "id": "menu-34",
-                    "text": "Game players",
-                    "link": "/players"
-                },
-                {
-                    "id": "menu-35",
-                    "text": "404 not found!",
-                    "link": "/404"
-                }
-            ]
+            "link": "/products"
         },
         {
             "id": "menu-4",
@@ -89,7 +62,14 @@
         {
             "id": "menu-5",
             "text": "Contact",
-            "link": "/contact-us"
+            "link": "/contact-us",
+            "submenu": [
+                {
+                    "id": "menu-33",
+                    "text": "FAQ's Page",
+                    "link": "/faq"
+                }
+            ]
         }
     ]
 }

@@ -50,46 +50,42 @@
         },
         {
             "id": "footer-3",
-            "title": "Information",
-            "images": [
+            "title": "Support",
+            "list": [
                 {
-                    "src": "../../data/images/team-logo/upcoming-game-thumb1.webp",
-                    "alt": "GAME TOURNAMENTS"
+                    "id": "footer-follow-01",
+                    "text": "Frequently Asked Questions",
+                    "link": "/faq's"
                 },
                 {
-                    "src": "../../data/images/team-logo/upcoming-game-thumb2.webp",
-                    "alt": "LIVE STREAMING"
+                    "id": "footer-follow-02",
+                    "text": "Terms & Conditions",
+                    "link": "https://dribbble.com"
                 },
                 {
-                    "src": "../../data/images/team-logo/upcoming-game-thumb3.webp",
-                    "alt": "GAME TOURNAMENTS"
+                    "id": "footer-follow-03",
+                    "text": "Shipping Policy",
+                    "link": "https://dribbble.com"
                 },
                 {
-                    "src": "../../data/images/team-logo/upcoming-game-thumb4.webp",
-                    "alt": "LIVE STREAMING"
-                },
-                {
-                    "src": "../../data/images/team-logo/upcoming-game-thumb5.webp",
-                    "alt": "GAME TOURNAMENTS"
-                },
-                {
-                    "src": "../../data/images/team-logo/upcoming-game-thumb6.webp",
-                    "alt": "LIVE STREAMING"
+                    "id": "footer-follow-04",
+                    "text": "Privacy Policy",
+                    "link": "https://dribbble.com"
                 }
             ]
         },
         {
             "id": "footer-4",
-            "title": "Follow Us",
+            "title": "Links",
             "list": [
                 {
                     "id": "footer-follow-01",
-                    "text": "Copywriting",
-                    "link": "https://dribbble.com"
+                    "text": "Products",
+                    "link": "https://youtube.com/"
                 },
                 {
                     "id": "footer-follow-02",
-                    "text": "Social Media",
+                    "text": "Events",
                     "link": "https://dribbble.com"
                 },
                 {
@@ -104,7 +100,7 @@
                 },
                 {
                     "id": "footer-follow-05",
-                    "text": "Illustration",
+                    "text": "References",
                     "link": "https://dribbble.com"
                 }
             ]

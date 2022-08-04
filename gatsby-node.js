@@ -37,7 +37,7 @@ exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions;
     const templates = {
         matchsPosts: path.resolve("src/templates/match-details/index.jsx"),
-        gamesPosts: path.resolve("src/templates/games-details/index.jsx"),
+        productsPosts: path.resolve("src/templates/products-details/index.jsx"),
         playersPosts: path.resolve("src/templates/players-details/index.jsx"),
         teamsPosts: path.resolve("src/templates/teams-details/index.js"),
         singleArticles: path.resolve(
@@ -54,12 +54,7 @@ exports.createPages = ({ actions, graphql }) => {
                     slug
                 }
             }
-            allGames {
-                nodes {
-                    slug
-                }
-            }
-            allPlayers {
+            allProducts {
                 nodes {
                     slug
                 }
@@ -102,24 +97,12 @@ exports.createPages = ({ actions, graphql }) => {
             });
         });
 
-        //  Games Details Page
-        const gamesPosts = res.data.allGames.nodes;
-        gamesPosts.forEach((node) => {
+        //  Products Details Page
+        const productsPosts = res.data.allProducts.nodes;
+        productsPosts.forEach((node) => {
             createPage({
-                path: `/games/${node.slug}`,
-                component: templates.gamesPosts,
-                context: {
-                    slug: node.slug,
-                },
-            });
-        });
-
-        // Players Details Page
-        const playersPosts = res.data.allPlayers.nodes;
-        playersPosts.forEach((node) => {
-            createPage({
-                path: `/players/${node.slug}`,
-                component: templates.playersPosts,
+                path: `/products/${node.slug}`,
+                component: templates.productsPosts,
                 context: {
                     slug: node.slug,
                 },

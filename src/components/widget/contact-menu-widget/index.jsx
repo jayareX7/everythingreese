@@ -13,7 +13,7 @@ const FooterMemuList = ({ infoData }) => {
                         <Link
                             key={item.id}
                             to={item.link}
-                            className="block text-blue mb-3 last:mb-0 hover:text-primary"
+                            className="block text-white mb-3 last:mb-0 hover:text-primary"
                         >
                             {item.text}
                         </Link>

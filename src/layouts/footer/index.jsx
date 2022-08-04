@@ -9,12 +9,11 @@ import FooterMemuList from "@components/widget/contact-menu-widget";
 const Footer = ({ data }) => {
     return (
         <Fragment>
-            <GamingUpdateArea />
-            <footer>
+            <footer className="footer-bg">
                 <div className="py-16 md:py-24">
                     <div className="container">
                         <div className="grid gap-8 md:gap-6 lg:gap-6 xxl:gap-16 grid-cols-1 sm:grid-cols-12">
-                            <div className="footer_widget_list sm:col-span-6 lg:col-span-4 lg:mr-12">
+                            <div className="footer_widget_list text-white sm:col-span-6 lg:col-span-4 lg:mr-12">
                                 <FooterInfoWidget
                                     infoData={data?.footer?.[0]}
                                 />
@@ -24,13 +23,13 @@ const Footer = ({ data }) => {
                                     infoData={data?.footer?.[1]}
                                 />
                             </div>
+                            <div className="footer_widget_list sm:col-span-6 lg:col-span-2">
+                                <FooterMemuList infoData={data?.footer?.[3]} />
+                            </div>
                             <div className="footer_widget_list sm:col-span-6 lg:col-span-3">
                                 <FooterWinnerWidget
                                     infoData={data?.footer?.[2]}
                                 />
-                            </div>
-                            <div className="footer_widget_list sm:col-span-6 lg:col-span-2">
-                                <FooterMemuList infoData={data?.footer?.[3]} />
                             </div>
                         </div>
                     </div>
@@ -39,35 +38,18 @@ const Footer = ({ data }) => {
                 <div className="footer-bottom bg-secondary-70">
                     <div className="container">
                         <div className=" flex flex-col md:flex-row md:justify-between items-center py-6">
-                            <div className="">
-                                &copy; {new Date().getFullYear()} BONX MADE WITH{" "}
-                                <i className="icofont-heart"></i> BY
+                            <div className="mx-auto">
+                                &copy; {new Date().getFullYear()} THEME MADE
+                                WITH <i className="icofont-heart"></i> BY
                                 <a
                                     className="hover:text-primary"
-                                    href="https://hasthemes.com/"
+                                    href="https://avxstudio.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
                                     {" "}
-                                    HasThemes
+                                    AVX STUDIO
                                 </a>
-                            </div>
-                            <div className="footer-copyright-right">
-                                <div className="flex">
-                                    <a
-                                        href="https://hasthemes.com/"
-                                        className="text-white hover:text-primary"
-                                    >
-                                        Terms &amp; Condition{" "}
-                                    </a>
-                                    <span className="mx-3"> || </span>
-                                    <a
-                                        href="https://hasthemes.com/"
-                                        className="text-white hover:text-primary"
-                                    >
-                                        Privacy Policy{" "}
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>

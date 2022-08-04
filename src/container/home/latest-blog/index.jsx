@@ -5,7 +5,7 @@ import BlogCard from "../../../components/blog-card";
 
 const LatestBlogArea = ({ data }) => {
     return (
-        <section className="latest-blog-section pt-16 md:pt-24">
+        <section className="latest-blog-section pb-16 md:pb-28 pt-4 md:pt-16">
             <div className="container px-4">
                 {data?.section_title && (
                     <div className="section-title mb-15">

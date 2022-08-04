@@ -17,7 +17,7 @@ const FooterContactInfoWidget = ({ infoData }) => {
                             <span className="text-primary mb-3 block">
                                 {item.title}:
                             </span>
-                            <p className="text-blue">{item.text}</p>
+                            <p className="text-white">{item.text}</p>
                         </div>
                     ))}
             </div>

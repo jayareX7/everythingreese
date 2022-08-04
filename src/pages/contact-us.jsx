@@ -7,10 +7,13 @@ import { normalizedData } from "@utils/functions";
 import PageBreadcrumb from "../components/pagebreadcrumb";
 import ContactUsInfoArea from "../container/contact-us/contact-info-card";
 import ContactFormArea from "../container/contact-us/contact-form";
+import FAQPage from "./faq";
+import FAQSection from "../container/faq/faq-section";
 
 const ContactUsPage = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
-    const content = normalizedData(data?.page.content || []);
+    const faqs = normalizedData(data?.faqs.content || []);
+    const contact = normalizedData(data?.contact.content || []);
     return (
         <Layout
             data={{
@@ -24,8 +27,8 @@ const ContactUsPage = ({ data, location, pageContext }) => {
                 location={location}
                 title="Contact Us"
             />
-            <ContactUsInfoArea data={content["contact-us-info-section"]} />
-            <ContactFormArea data={content["contact-us-form-section"]} />
+
+            <ContactFormArea data={contact["contact-us-form-section"]} />
         </Layout>
     );
 };
@@ -39,9 +42,6 @@ ContactUsPage.propTypes = {
         }),
         page: PropTypes.shape({
             content: PropTypes.arrayOf(PropTypes.shape({})),
-        }),
-        allMatch: PropTypes.shape({
-            nodes: PropTypes.arrayOf(PropTypes.shape({})),
         }),
     }),
 };
@@ -60,7 +60,15 @@ export const query = graphql`
                 }
             }
         }
-        page(title: { eq: "contactUsPage" }, pageType: { eq: innerpage }) {
+        contact: page(
+            title: { eq: "contactUsPage" }
+            pageType: { eq: innerpage }
+        ) {
+            content {
+                ...PageContentAll
+            }
+        }
+        faqs: page(title: { eq: "FAQPage" }, pageType: { eq: innerpage }) {
             content {
                 ...PageContentAll
             }

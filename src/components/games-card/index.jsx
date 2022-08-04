@@ -3,12 +3,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from "../shared/button";
 
-const GameCard = ({ alt, slug, image, buttons }) => {
-    const game_thumb =
+const ProductCard = ({ alt, slug, image, buttons }) => {
+    const product_thumb =
         "group mt-10 relative text-white font-bold after:absolute content-after after:border-4 after:bg-gray-80 after:z-10 after:border-opacity-50 after:w-full after:h-full after:z-0  after:rounded-5xl after:top-1/2  after:left-1/2  after:transform  after:-translate-x-2/4  after:-translate-y-2/4  after:transition  after:opacity-0  hover:after:opacity-70 before:bg-secondary-100 before:empty-content before:absolute before:w-full  before:h-full before:z-10 before:rounded-5xl before:top-1/2 before:left-1/2 before:transform before:-translate-x-2/4 before:-translate-y-2/4 before:transition-all before:opacity-0 hover:before:opacity-70";
     return (
         <div className="game-card relative">
-            <div className={game_thumb}>
+            <div className={product_thumb}>
                 <GatsbyImage
                     className="rounded-4xl"
                     image={getImage(image)}
@@ -19,7 +19,7 @@ const GameCard = ({ alt, slug, image, buttons }) => {
                         <Button
                             key={id}
                             {...props}
-                            path={`/games/${slug}`}
+                            path={`/products/${slug}`}
                             className="text-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 opacity-0 group-hover:opacity-100"
                         >
                             {content}
@@ -34,7 +34,7 @@ const GameCard = ({ alt, slug, image, buttons }) => {
         </div>
     );
 };
-GameCard.propTypes = {
+ProductCard.propTypes = {
     alt: PropTypes.string,
     date: PropTypes.string,
     slug: PropTypes.string,
@@ -45,4 +45,4 @@ GameCard.propTypes = {
         })
     ),
 };
-export default GameCard;
+export default ProductCard;

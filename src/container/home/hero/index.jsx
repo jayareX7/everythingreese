@@ -13,28 +13,34 @@ const HeroArea = ({ data }) => {
             }}
         >
             <div className="container px-4 z-10">
-                <div className="text-white mt-16">
+                <div className="text-white">
                     {data?.headings?.[0] && (
-                        <h1 className="mt-28 sm:mt-32 text-shadow max-w-3xl">
+                        <h1 className=" mx-auto text-center text-shadow max-w-3xl">
                             {data.headings[0].content}
                         </h1>
                     )}
                     {data?.texts?.[0] && (
-                        <p className="text-base  lg:text-md font-bold mb-6 sm:mb-10 ">
+                        <p className="text-base mx-auto text-center lg:text-md font-bold mb-6 sm:mb-10 ">
                             {data.texts[0].content}
                         </p>
                     )}
-                    {data?.buttons &&
-                        data.buttons.map(({ id, content, ...props }) => (
-                            <Button key={id} {...props} className="text-white">
-                                {content}
-                                <StaticImage
-                                    className="align-middle ml-3 transition-all group-hover:ml-5"
-                                    src="../../../data/images/icons/arrrow-icon.webp"
-                                    alt=""
-                                />
-                            </Button>
-                        ))}
+                    <div className="text-align-center">
+                        {data?.buttons &&
+                            data.buttons.map(({ id, content, ...props }) => (
+                                <Button
+                                    key={id}
+                                    {...props}
+                                    className="text-white mx-auto text-center"
+                                >
+                                    {content}
+                                    <StaticImage
+                                        className="align-middle mx-auto text-center ml-3 transition-all group-hover:ml-5"
+                                        src="../../../data/images/icons/arrrow-icon.webp"
+                                        alt=""
+                                    />
+                                </Button>
+                            ))}
+                    </div>
                 </div>
             </div>
             <div className="absolute right-0.5 bottom-0">

@@ -3,9 +3,9 @@ const {
     contentDefs,
     generalDefs,
     matchDefs,
-    gamesDefs,
+    productsDefs,
     articlesDefs,
-    playersDefs,
+    testimonialsDefs,
 } = require("./typedefs");
 
 module.exports = async ({ actions }) => {
@@ -16,9 +16,9 @@ module.exports = async ({ actions }) => {
         contentDefs,
         generalDefs,
         matchDefs,
-        gamesDefs,
+        productsDefs,
         articlesDefs,
-        playersDefs,
+        testimonialsDefs,
     ];
 
     createTypes(allTypeDefs);

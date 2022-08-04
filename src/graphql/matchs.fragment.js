@@ -6,10 +6,6 @@ export const query = graphql`
         date(formatString: "DD MMMM, YYYY, hh:mm:ss A")
         title
         slug
-        playerNumber
-        teamNubmber
-        winningPrize
-        registeredTeams
         liveStreaming {
             id
             link
@@ -24,45 +20,6 @@ export const query = graphql`
                         gatsbyImageData
                     }
                 }
-            }
-        }
-        teams {
-            name
-            logo {
-                alt
-                src {
-                    childImageSharp {
-                        gatsbyImageData
-                    }
-                }
-            }
-            slug
-            teamPlayer {
-                id
-                name
-                images {
-                    alt
-                    src {
-                        childImageSharp {
-                            gatsbyImageData
-                        }
-                    }
-                }
-            }
-            socials {
-                id
-                title
-                link
-                icon
-            }
-        }
-        quoteText
-        content {
-            id
-            section
-            items {
-                id
-                desc
             }
         }
     }

@@ -6,12 +6,8 @@ import Logo from "../../components/logo";
 import MainMenu from "../../components/menu/main-menu";
 import MobileNavMenu from "../../components/menu/mobile-menu";
 import Button from "../../components/shared/button";
-import { useSticky } from "../../hooks";
 
 const Header = ({ data }) => {
-    // Sticky Header
-    const { sticky, headerRef, fixedRef } = useSticky();
-
     // OfCanvas Menu
     const [ofcanvasOpen, setOfcanvasOpen] = useState(false);
 
@@ -20,15 +16,9 @@ const Header = ({ data }) => {
         setOfcanvasOpen((prev) => !prev);
     };
     return (
-        <header
-            ref={headerRef}
-            className="bg-transparent absolute w-full mx-auto z-40"
-        >
+        <header className="bg-transparent relative w-full mx-auto z-40">
             <div
-                ref={fixedRef}
-                className={`header-top ${
-                    sticky
-                        ? "fixed top-0 bg-secondary-100 opacity-90 w-full"
+                className={`header-top "fixed top-0 bg-secondary-100 opacity-90 w-full"
                         : ""
                 }`}
             >
@@ -37,7 +27,7 @@ const Header = ({ data }) => {
                         <Logo />
                     </div>
                 </div>
-                <div className="container-50 px-4 nowrap">
+                <div className="container-75 px-4 nowrap">
                     <nav className="bg-transparent flex justify-between items-center py-3">
                         <MainMenu allmenuData={data?.menu} />
                         <div className="header-right-action flex items-center">

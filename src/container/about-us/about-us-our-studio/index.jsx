@@ -26,13 +26,13 @@ const AboutUsOurStudioArea = ({ data }) => {
                             />
                             <div className="gaming_video_paly_icon absolute right-10 bottom-0 transform ">
                                 <span
-                                    className="video_popup bg-primary w-28 h-28 leading-112 text-center rounded-full inline-block"
+                                    className="video_popup bg-primary-yellow w-28 h-28 leading-112 text-center rounded-full inline-block"
                                     role="button"
                                     tabIndex="0"
                                     onClick={() => setOpen(true)}
                                     onKeyPress={(e) => console.log(e)}
                                 >
-                                    <i className="icofont-ui-play"></i>
+                                    <i className="text-white icofont-ui-play"></i>
                                 </span>
                             </div>
                         </div>

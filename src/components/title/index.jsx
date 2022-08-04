@@ -9,7 +9,7 @@ const SectionTitle = ({
 }) => {
     const title = {
         showDescription: showDescription || false,
-        align: align || "right",
+        align: align || "left",
         color: color || "primary",
     };
     return (

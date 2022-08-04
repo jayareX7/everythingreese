@@ -31,6 +31,19 @@ module.exports = ({ createResolvers }) => {
                 },
             },
         },
+        Products: {
+            categories: {
+                resolve: async (source, args, context, info) => {
+                    const productResult = source.categories.map((item) => {
+                        return {
+                            title: item,
+                            slug: slugify(item),
+                        };
+                    });
+                    return productResult;
+                },
+            },
+        },
         Article: {
             postedAt: {
                 resolve: (source) => {

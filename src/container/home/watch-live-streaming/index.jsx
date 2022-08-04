@@ -3,11 +3,21 @@ import PropTypes from "prop-types";
 import LiveStreaming from "../../../components/live-streaming";
 import Swiper, { SwiperSlide } from "@components/shared/swiper";
 import { StaticImage } from "gatsby-plugin-image";
+import SectionTitle from "../../../components/title";
 
 const WatchLiveStremingArea = ({ data }) => {
     return (
-        <section className="watch-live-section py-16 md:py-28">
+        <section className="watch-live-section pt-16 md:pt-28 pb-4 md:pb-16">
             <div className="container">
+                {data?.section_title && (
+                    <div className="section-title mb-15">
+                        <SectionTitle
+                            heading={data?.section_title.heading}
+                            {...data.section_title}
+                        />
+                    </div>
+                )}
+
                 <div className="relative">
                     <Swiper
                         className="relative"
@@ -67,6 +77,9 @@ const WatchLiveStremingArea = ({ data }) => {
 };
 WatchLiveStremingArea.propTypes = {
     data: PropTypes.shape({
+        section_title: PropTypes.shape({
+            heading: PropTypes.string,
+        }),
         items: PropTypes.arrayOf(
             PropTypes.shape({
                 id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),

@@ -17,6 +17,5 @@ export const query = graphql`
             title
             slug
         }
-        content
     }
 `;

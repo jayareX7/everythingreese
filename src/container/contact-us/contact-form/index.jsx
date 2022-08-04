@@ -59,7 +59,7 @@ const ContactFormArea = ({ data }) => {
                             className="section-title-warp text-center mt-10"
                             key={id}
                         >
-                            <Button {...props} className="text-white">
+                            <Button {...props} className="text-white mb-10">
                                 {content}
                                 <StaticImage
                                     className="align-middle ml-3 transition-all group-hover:ml-5"

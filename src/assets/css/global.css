@@ -39,6 +39,10 @@
     color: #0741ad;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
 .w-5 {
     width: 5rem;
 }
@@ -56,6 +60,36 @@
     background-color: #282120;
     width: 80%;
     border-radius: 1rem;
+}
+
+.truncate-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 2rem;
+    max-height: 90px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.section-divider {
+    width: 100%;
+    background-color: #fad02c;
+    height: 0.45rem;
+    margin: 5rem 0;
+}
+
+.footer-bg {
+    background: rgb(40, 33, 32);
+    background: linear-gradient(
+        180deg,
+        rgba(40, 33, 32, 1) 40%,
+        rgba(17, 14, 13, 1) 100%
+    );
+}
+
+.button-link {
+    background-image: url("../../data/images/others/btn-signup.webp");
 }
 
 @layer base {
@@ -100,12 +134,17 @@
         text-align: center;
         margin: 0 auto;
     }
+    .container-75 {
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 @layer utilities {
     @variants responsive {
         .text-shadow {
-            text-shadow: 3px 3px 0px #b154f0;
+            text-shadow: 1px 1px 0px #b88917;
         }
     }
     @variants responsive {
@@ -176,7 +215,7 @@
         width: 100%;
     }
     .breadcrumb__title {
-        @apply text-32base md:text-2xl text-shadow uppercase font-breathing;
+        @apply text-32base md:text-2xl text-shadow font-breathing;
     }
     .breadcrumb__list {
         @apply mt-5;

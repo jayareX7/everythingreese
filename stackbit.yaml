@@ -1,0 +1,5 @@
+stackbitVersion: ~0.4.0
+ssgName: gatsby
+nodeVersion: "18.7"
+cmsName: git
+dataDir: content/data

@@ -17,8 +17,15 @@ module.exports = `
         items: [Item]
         section_title: SectionTitle
         images: [Image]
+        date: BlogDate!
         buttons: [Button]
         link: String
+        name: String
+        socials: [Social]
+    }
+    type BlogDate {
+        date: Date! @dateformat
+        slug: String!
     }
     type Item {
         id: ID!

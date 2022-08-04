@@ -1,0 +1,196 @@
+{
+    "title": "testimonialsPage",
+    "pageType": "innerpage",
+    "content": [
+        {
+            "id": "testimonial-section",
+            "section": "testimonial-section",
+            "section_title": {
+                "showDescription": false,
+                "align": "left",
+                "heading": "WHAT PEOPLE ARE SAYING ABOUT REESE",
+                "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
+            },
+            "socials": [
+                {
+                    "id": 1,
+                    "icon": "icofont-twitch",
+                    "link": "https://www.twitch.tv",
+                    "title": "twitch"
+                },
+                {
+                    "id": 2,
+                    "icon": "icofont-facebook",
+                    "link": "https://www.facebook.com",
+                    "title": "facebook"
+                },
+                {
+                    "id": 3,
+                    "icon": "icofont-youtube-play",
+                    "link": "https://www.youtube.com",
+                    "title": "youtube"
+                },
+                {
+                    "id": 4,
+                    "icon": "icofont-twitter",
+                    "link": "https://www.twitter.com",
+                    "title": "twitter"
+                }
+            ],
+            "items": [
+                {
+                    "id": "testimonial-01",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/testimonial-thumb.webp",
+                            "alt": "Panda"
+                        }
+                    ],
+                    "name": "Randolph Frazier",
+                    "date": "2021-01-02 13:01:00",
+                    "socials": [
+                        {
+                            "id": 1,
+                            "icon": "icofont-twitch",
+                            "link": "https://www.twitch.tv",
+                            "title": "twitch"
+                        },
+                        {
+                            "id": 2,
+                            "icon": "icofont-facebook",
+                            "link": "https://www.facebook.com",
+                            "title": "facebook"
+                        },
+                        {
+                            "id": 3,
+                            "icon": "icofont-youtube-play",
+                            "link": "https://www.youtube.com",
+                            "title": "youtube"
+                        },
+                        {
+                            "id": 4,
+                            "icon": "icofont-twitter",
+                            "link": "https://www.twitter.com",
+                            "title": "twitter"
+                        }
+                    ],
+                    "description": "Lorem long established fact that a reader will be distracted the readable content of page when looking at it layout the point using lorem Ipsum is that it has a more-or-less normal distribution lette as opposed to using  making it look like readable english, many desktop publishing packages and web page now editors."
+                },
+                {
+                    "id": "testimonial-02",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/testimonial-thumb.webp",
+                            "alt": "Panda"
+                        }
+                    ],
+                    "name": "Johan Puker",
+                    "date": "2020-01-20",
+                    "socials": [
+                        {
+                            "id": 1,
+                            "icon": "icofont-twitch",
+                            "link": "https://www.twitch.tv",
+                            "title": "twitch"
+                        },
+                        {
+                            "id": 2,
+                            "icon": "icofont-facebook",
+                            "link": "https://www.facebook.com",
+                            "title": "facebook"
+                        },
+                        {
+                            "id": 3,
+                            "icon": "icofont-youtube-play",
+                            "link": "https://www.youtube.com",
+                            "title": "youtube"
+                        },
+                        {
+                            "id": 4,
+                            "icon": "icofont-twitter",
+                            "link": "https://www.twitter.com",
+                            "title": "twitter"
+                        }
+                    ],
+                    "description": "It is a long established fact that a reader will be distracted the readable content of page when looking at it layout the point using lorem Ipsum is that it has a more-or-less normal distribution lette as opposed to using  making it look like readable english, many desktop publishing packages and web page now editors."
+                },
+                {
+                    "id": "testimonial-02",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/testimonial-thumb.webp",
+                            "alt": "Panda"
+                        }
+                    ],
+                    "name": "Melyssa Ford",
+                    "date": "2020-01-20",
+                    "socials": [
+                        {
+                            "id": 1,
+                            "icon": "icofont-twitch",
+                            "link": "https://www.twitch.tv",
+                            "title": "twitch"
+                        },
+                        {
+                            "id": 2,
+                            "icon": "icofont-facebook",
+                            "link": "https://www.facebook.com",
+                            "title": "facebook"
+                        },
+                        {
+                            "id": 3,
+                            "icon": "icofont-youtube-play",
+                            "link": "https://www.youtube.com",
+                            "title": "youtube"
+                        },
+                        {
+                            "id": 4,
+                            "icon": "icofont-twitter",
+                            "link": "https://www.twitter.com",
+                            "title": "twitter"
+                        }
+                    ],
+                    "description": "It is a long established fact that a reader will be distracted the readable content of page when looking at it layout the point using lorem Ipsum is that it has a more-or-less normal distribution lette as opposed to using  making it look like readable english, many desktop publishing packages and web page now editors."
+                },
+                {
+                    "id": "testimonial-04",
+                    "images": [
+                        {
+                            "src": "../../data/images/testimonial/testimonial-thumb.webp",
+                            "alt": "Panda"
+                        }
+                    ],
+                    "name": "Terrance J",
+                    "date": "2020-01-20",
+                    "socials": [
+                        {
+                            "id": 1,
+                            "icon": "icofont-twitch",
+                            "link": "https://www.twitch.tv",
+                            "title": "twitch"
+                        },
+                        {
+                            "id": 2,
+                            "icon": "icofont-facebook",
+                            "link": "https://www.facebook.com",
+                            "title": "facebook"
+                        },
+                        {
+                            "id": 3,
+                            "icon": "icofont-youtube-play",
+                            "link": "https://www.youtube.com",
+                            "title": "youtube"
+                        },
+                        {
+                            "id": 4,
+                            "icon": "icofont-twitter",
+                            "link": "https://www.twitter.com",
+                            "title": "twitter"
+                        }
+                    ],
+                    "description": "It is a long established fact that a reader will be distracted the readable content of page when looking at it layout the point using lorem Ipsum is that it has a more-or-less normal distribution lette as opposed to using  making it look like readable english, many desktop publishing packages and web page now editors."
+                }
+            ]
+        }
+    ]
+}

@@ -1,37 +1,79 @@
 import React from "react";
+import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const SingleTestimonial = ({ image, alt, name, description, designation }) => {
+const SingleTestimonial = ({
+    image,
+    description,
+    name,
+    date,
+    dateSlug,
+    socials,
+    title,
+}) => {
     return (
-        <div className="testimonial_list flex flex-col md:flex-row items-center">
-            <div className="testimonial_thumb w-28 md:w-32 lg:w-200 xl:w-260 flex-shrink-0">
-                <GatsbyImage image={getImage(image)} alt={alt} />
-            </div>
-            <div className="testimonial_content flex-grow text-center md:text-left mt-8 md:mt-0 md:ml-14">
-                <p className="text-base lg:text-20base leading-loose">
-                    {description}
-                </p>
-                <div className="testimonial_author mt-5">
-                    <h3 className="font-bold uppercase">{name}</h3>
-                    <span className="text-primary mt-5 block">
-                        {designation}
-                    </span>
+        <div className="single_blog flex sm:flex-row md:flex-row items-center mt-7">
+            <div className="blog_thumb w-28 justify-center items-center sm:w-28 md:w-28 lg:w-48 flex-shrink-0">
+                <div className="block">
+                    {image ? (
+                        <GatsbyImage
+                            className="rounded-4xl"
+                            image={getImage(image)}
+                            alt={name}
+                        />
+                    ) : (
+                        <StaticImage
+                            className="rounded-4xl"
+                            src="../../assets/images/placeholder-image.png"
+                            alt={name}
+                        />
+                    )}
                 </div>
+            </div>
+
+            <div className="blog_content ml-4 md:ml-4 lg:ml-9">
+                <div className="text-orange">{name}</div>
+                <Link to={`/date/${dateSlug}`} className="mb-2 block">
+                    <i className="icofont-calendar text-primary mr-2"></i>
+                    {dateSlug}
+                </Link>
+                <h3 className="font-bold truncate-text mb-1 md:mb-3 md:text-sm lg:text-sm">
+                    <div className="hover:text-primary">
+                        {description || "Blog Title"}
+                    </div>
+                </h3>
+                <Link
+                    to={name}
+                    className="pl-11 text-sm font-medium sm:uppercase hover:text-primary relative 
+                    text-white 
+                    after:absolute
+                    content-after
+                  after:bg-primary
+                    after:w-8 
+                    after:h-0.5
+                    after:z-0 
+                    after:top-1/2 
+                    after:left-0 
+                    after:transform 
+                    after:-translate-y-2/4 
+                    after:transition 
+                    after:opacity-100"
+                >
+                    more
+                </Link>
             </div>
         </div>
     );
 };
 SingleTestimonial.propTypes = {
-    alt: PropTypes.string,
-    description: PropTypes.string,
-    designation: PropTypes.string,
-    name: PropTypes.string,
     image: PropTypes.object,
-    buttons: PropTypes.arrayOf(
-        PropTypes.shape({
-            content: PropTypes.string,
-        })
-    ),
+    name: PropTypes.string,
+    title: PropTypes.string,
+    date: PropTypes.string,
+    dateSlug: PropTypes.string,
+    socials: PropTypes.array,
+    description: PropTypes.string,
 };
+
 export default SingleTestimonial;

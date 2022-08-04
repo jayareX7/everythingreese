@@ -10,19 +10,13 @@ import { normalizedData } from "@utils/functions";
 import LiveStreaming from "../../components/live-streaming";
 import ContentText from "../../components/content-text";
 import Button from "../../components/shared/button";
-import { DiscussionEmbed } from "disqus-react";
+
 const MatchDetails = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.match.content || []);
     // Base Url
     const baseUrl = "https://bonx.com";
-    // Disqus Comments add
-    const disqusShorttname = "mitech-1";
-    const disquscConfig = {
-        identifier: data?.match?.id,
-        title: data?.match?.title,
-        url: baseUrl + "/" + pageContext.slug,
-    };
+
     return (
         <Layout
             data={{
@@ -297,10 +291,6 @@ const MatchDetails = ({ data, location, pageContext }) => {
                                     <div className="mb-4">
                                         <h3 className="font-bold">Comments</h3>
                                     </div>
-                                    <DiscussionEmbed
-                                        shortname={disqusShorttname}
-                                        config={disquscConfig}
-                                    />
                                 </div>
                             </div>
                         </div>

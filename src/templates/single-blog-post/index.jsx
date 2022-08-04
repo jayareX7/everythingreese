@@ -6,19 +6,11 @@ import PageBreadcrumb from "@components/pagebreadcrumb";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { normalizedData } from "@utils/functions";
-import { DiscussionEmbed } from "disqus-react";
+
 const SinglePosts = ({ data, location, pageContext }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     // Social Share
     const baseUrl = "https://bonx.com";
-
-    // Disqus Comments add
-    const disqusShorttname = "mitech-1";
-    const disquscConfig = {
-        identifier: data?.article?.id,
-        title: data?.article?.title,
-        url: baseUrl + "/" + pageContext.slug,
-    };
 
     return (
         <Layout
@@ -31,7 +23,7 @@ const SinglePosts = ({ data, location, pageContext }) => {
             <PageBreadcrumb
                 pageContext={pageContext}
                 location={location}
-                title="Blog Details"
+                title="Event Details"
             />
             <div className="blog-post-content-wrapper">
                 <div className="container">
@@ -130,10 +122,6 @@ const SinglePosts = ({ data, location, pageContext }) => {
                                     <div className="mb-4">
                                         <h3 className="font-bold">Comments</h3>
                                     </div>
-                                    <DiscussionEmbed
-                                        shortname={disqusShorttname}
-                                        config={disquscConfig}
-                                    />
                                 </div>
                             </div>
                         </div>

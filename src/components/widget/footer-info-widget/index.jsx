@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
-import Logo from "../../logo";
+import BigLogo from "../../logo/big-logo";
 
 const FooterInfoWidget = ({ infoData }) => {
     return (
         <Fragment>
-            <Logo />
-            <p className="mt-7 text-blue">{infoData?.text}</p>
+            <BigLogo />
+            <p className="mt-7 text-white">{infoData?.text}</p>
             <div className="footer_social flex mt-8">
                 {infoData?.socials?.map((item) => (
                     <a

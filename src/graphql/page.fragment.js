@@ -30,6 +30,12 @@ export const query = graphql`
                 link
                 title
             }
+            socials {
+                id
+                title
+                link
+                icon
+            }
         }
         texts {
             content

@@ -5,17 +5,17 @@ import Layout from "@layout";
 import HeroArea from "../container/home/hero";
 import WelcomeFeaturesArea from "../container/home/welcome-features";
 import WatchLiveStremingArea from "../container/home/watch-live-streaming";
-import MatchArea from "../container/home/match";
-import FeaturedProductsArea from "../container/home/featured-products";
-import TestimonialArea from "../container/home/testimonial";
+import PopularProductsArea from "../container/home/popular-products";
+import TestimonialArea from "../container/home/testimonials";
 import LatestBlogArea from "../container/home/latest-blog";
 import { graphql } from "gatsby";
 import { normalizedData } from "@utils/functions";
-import FunfactArea from "../container/home/funfact";
 
 const IndexPage = ({ data }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.page?.content || []);
+    const welcome = normalizedData(data?.pages3.content || []);
+    const testimonials = normalizedData(data?.pages2.content || []);
     return (
         <Layout
             data={{
@@ -26,16 +26,22 @@ const IndexPage = ({ data }) => {
             <SEO title="Home" pathname="/" />
             <HeroArea data={content["hero-section"]} />
             <div className="about-container">
-                <WelcomeFeaturesArea data={content["welcome-section"]} />{" "}
+                <WelcomeFeaturesArea data={welcome["welcome-section"]} />{" "}
             </div>
             <div className="section-divider"></div>
-            <FeaturedProductsArea />
-            <div className="about-container">
-                <WelcomeFeaturesArea data={content["welcome-section"]} />{" "}
-            </div>
-            <WatchLiveStremingArea data={{ items: data.allMatch.nodes }} />
-
-            <TestimonialArea data={content["testimonial-section"]} />
+            <PopularProductsArea
+                data={{
+                    ...content["popular-products-section"],
+                    items: data.allProducts.nodes,
+                }}
+            />
+            <TestimonialArea data={testimonials["testimonial-section"]} />
+            <WatchLiveStremingArea
+                data={{
+                    ...content["latest-event-section"],
+                    items: data.allMatch.nodes,
+                }}
+            />
             <LatestBlogArea
                 data={{
                     ...content["latest-section"],
@@ -54,10 +60,10 @@ IndexPage.propTypes = {
         page: PropTypes.shape({
             content: PropTypes.arrayOf(PropTypes.shape({})),
         }),
-        allMatch: PropTypes.shape({
+        allProducts: PropTypes.shape({
             nodes: PropTypes.arrayOf(PropTypes.shape({})),
         }),
-        allGames: PropTypes.shape({
+        allMatch: PropTypes.shape({
             nodes: PropTypes.arrayOf(PropTypes.shape({})),
         }),
         latestPosts: PropTypes.shape({
@@ -85,14 +91,30 @@ export const query = graphql`
                 ...PageContentAll
             }
         }
+        pages2: page(
+            title: { eq: "testimonialsPage" }
+            pageType: { eq: innerpage }
+        ) {
+            content {
+                ...PageContentAll
+            }
+        }
+        pages3: page(
+            title: { eq: "welcomeSection" }
+            pageType: { eq: innerpage }
+        ) {
+            content {
+                ...PageContentAll
+            }
+        }
+        allProducts(sort: { order: DESC, fields: date }, limit: 4) {
+            nodes {
+                ...Products
+            }
+        }
         allMatch(sort: { order: DESC, fields: date }, limit: 3) {
             nodes {
                 ...Matchs
-            }
-        }
-        allGames(sort: { order: DESC, fields: date }, limit: 4) {
-            nodes {
-                ...Games
             }
         }
         latestPosts: allArticle(

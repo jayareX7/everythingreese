@@ -12,10 +12,12 @@ module.exports = {
                     DEFAULT: "#B88917",
                     90: "#814AC8",
                     transparent: "transparent",
+                    yellow: "#FAD02C",
+                    brown: "#282120",
                 },
                 secondary: {
                     60: "#16073a",
-                    70: "#140e38",
+                    70: "#282120",
                     80: "#423A5F",
                     90: "#E6C2BF",
                     100: "#282120",

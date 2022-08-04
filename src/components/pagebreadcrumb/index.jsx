@@ -13,7 +13,7 @@ const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
     const label = crumbLabelArr[crumbLabelArr.length - 1];
     const labelArr = label.split("-");
     const disableLinks = [
-        "/games",
+        "/products",
         "/category",
         "/profile",
         "/date",
@@ -22,7 +22,6 @@ const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
         "/blog",
         "/blog/page",
         "/blogs",
-        "/match",
     ];
     return (
         <section
@@ -31,13 +30,8 @@ const PageBreadcrumb = ({ title, crumbLabel, location, pageContext }) => {
                 backgroundImage: `url(${BreadcrumbImage})`,
             }}
         >
-            <div className=" text-center mt-12 transform">
-                <Breadcrumb
-                    title={title}
-                    crumbs={crumbs}
-                    crumbLabel={labelArr.join(" ")}
-                    disableLinks={disableLinks}
-                />
+            <div className=" text-center  transform">
+                <h1>{title}</h1>
                 <span className="hidden breadcrumb__title breadcrumb__list breadcrumb__separator breadcrumb__list__item breadcrumb__link__active"></span>
             </div>
         </section>
