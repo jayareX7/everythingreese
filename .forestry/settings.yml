@@ -35,6 +35,11 @@ sections:
   label: Event Post
   create: documents
   match: "**/*"
+- type: directory
+  path: src/data/products
+  label: Products
+  create: documents
+  match: "**/*"
 upload_dir: src/data/images
 public_path: ''
 front_matter_path: ''
