@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: src/data/general/menu.json
+  label: Menu Links
+  match: "**/*"
 - type: heading
   label: General Config
 - type: heading
