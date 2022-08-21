@@ -18,7 +18,7 @@ const Header = ({ data }) => {
     return (
         <header className="bg-transparent relative w-full mx-auto z-40">
             <div
-                className={`header-top "fixed top-0 bg-secondary-100 opacity-90 w-full"
+                className={`header-top "fixed top-0 bg-primary-transparent opacity-90 w-full"
                         : ""
                 }`}
             >

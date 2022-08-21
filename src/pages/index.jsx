@@ -10,12 +10,15 @@ import TestimonialArea from "../container/home/testimonials";
 import LatestBlogArea from "../container/home/latest-blog";
 import { graphql, Link } from "gatsby";
 import { normalizedData } from "@utils/functions";
+import FeaturesArea from "../container/home/features";
 
 const IndexPage = ({ data }) => {
     const globalContent = normalizedData(data?.allGeneral?.nodes || []);
     const content = normalizedData(data?.page?.content || []);
     const welcome = normalizedData(data?.pages3.content || []);
     const testimonials = normalizedData(data?.pages2.content || []);
+    const features = normalizedData(data?.pages4.content || []);
+
     return (
         <Layout
             data={{
@@ -25,10 +28,7 @@ const IndexPage = ({ data }) => {
         >
             <SEO title="Home" pathname="/" />
             <HeroArea data={content["hero-section"]} />
-            <div className="about-container">
-                <WelcomeFeaturesArea data={welcome["welcome-section"]} />
-            </div>
-            <div className="section-divider"></div>
+
             <PopularProductsArea
                 data={{
                     ...content["popular-products-section"],
@@ -43,6 +43,13 @@ const IndexPage = ({ data }) => {
                     View All
                 </Link>
             </div>
+
+            <div className="about-container">
+                <WelcomeFeaturesArea data={welcome["welcome-section"]} />
+                <FeaturesArea data={features["features-section"]} />
+            </div>
+
+            <div className="section-divider"></div>
 
             <TestimonialArea data={testimonials["testimonial-section"]} />
             <WatchLiveStremingArea
@@ -108,6 +115,22 @@ export const query = graphql`
                 ...PageContentAll
             }
         }
+        pages4: page(
+            title: { eq: "featuresSection" }
+            pageType: { eq: homepage }
+        ) {
+            items {
+                headings {
+                    content
+                }
+                description
+            }
+            content {
+                section_title {
+                    heading
+                }
+            }
+        }
         pages3: page(
             pageType: { eq: homepage }
             title: { eq: "welcomeSection" }
@@ -123,6 +146,7 @@ export const query = graphql`
         allProducts(sort: { order: DESC, fields: date }, limit: 4) {
             nodes {
                 ...Products
+                title
             }
         }
         allMatch(sort: { order: DESC, fields: date }, limit: 3) {

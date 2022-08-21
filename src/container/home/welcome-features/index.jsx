@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SectionTitle from "../../../components/title";
+import WelcomeFeatures from "../../../components/welcome-features";
 import { StaticImage } from "gatsby-plugin-image";
 
 const WelcomeFeaturesArea = ({ data }) => {
@@ -42,6 +43,24 @@ const WelcomeFeaturesArea = ({ data }) => {
                             </h1>
                         </p>
                     </div>
+                </div>
+
+                <div className="flex flex-wrap -mx-3 text-center">
+                    {data?.items &&
+                        data?.items.map((item) => (
+                            <div
+                                key={item.id}
+                                className="w-full md:w-1/2 lg:w-1/3 px-4"
+                            >
+                                <WelcomeFeatures
+                                    title={item.headings[0].content}
+                                    level={item.headings[0].level}
+                                    iconImage={item.images[0].src}
+                                    bgShapImage={item.images[1].src}
+                                    description={item.description}
+                                />
+                            </div>
+                        ))}
                 </div>
             </div>
         </section>

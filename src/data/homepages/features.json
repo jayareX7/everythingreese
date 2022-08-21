@@ -1,0 +1,80 @@
+{
+    "title": "featuresSection",
+    "pageType": "homepage",
+    "content": [
+        {
+            "id": "home-features-section",
+            "section": "features-section",
+            "text": "Text Gopes Here",
+            "quote": "Live For THe Moment",
+            "section_title": {
+                "showDescription": false,
+                "align": "center",
+                "heading": "Cruelty Free",
+                "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
+            }
+        }
+    ],
+    "items": [
+        {
+            "id": "features-1",
+            "headings": [
+                {
+                    "level": "h3",
+                    "content": "LIVE STREAMING"
+                }
+            ],
+            "images": [
+                {
+                    "src": "../../data/images/features/gaming-world1.webp",
+                    "alt": "LIVE STREAMING"
+                },
+                {
+                    "src": "../../data/images/features/gaming-world-bg1.webp",
+                    "alt": "LIVE STREAMING"
+                }
+            ],
+            "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
+        },
+        {
+            "id": "features-2",
+            "headings": [
+                {
+                    "level": "h3",
+                    "content": "GAME NEWS"
+                }
+            ],
+            "images": [
+                {
+                    "src": "../../data/images/features/gaming-world2.webp",
+                    "alt": "GAME NEWS"
+                },
+                {
+                    "src": "../../data/images/features/gaming-world-bg2.webp",
+                    "alt": "LIVE STREAMING"
+                }
+            ],
+            "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
+        },
+        {
+            "id": "features-3",
+            "headings": [
+                {
+                    "level": "h3",
+                    "content": "GAME TOURNAMENTS"
+                }
+            ],
+            "images": [
+                {
+                    "src": "../../data/images/features/gaming-world3.webp",
+                    "alt": "GAME TOURNAMENTS"
+                },
+                {
+                    "src": "../../data/images/features/gaming-world-bg3.webp",
+                    "alt": "LIVE STREAMING"
+                }
+            ],
+            "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
+        }
+    ]
+}
