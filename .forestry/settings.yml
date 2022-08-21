@@ -22,7 +22,7 @@ sections:
   path: src/data/inner-pages
   label: About Us Page
   create: none
-  match: about-ckc-page.json
+  match: about-us-page.json
 - type: directory
   path: src/data/inner-pages
   label: Contact Page
