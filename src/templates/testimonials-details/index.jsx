@@ -68,7 +68,7 @@ const TestimonialsDetails = ({ data, location, pageContext }) => {
                                 <h3 className="font-bold mb-5 text-primary uppercase pl-24 relative after:absolute content-after after:bg-primary after:w-16  after:h-1 after:z-0  after:top-1/2  after:left-0  after:transform  after:-translate-y-2/4  after:transition  after:opacity-100">
                                     PLAYER PROFILE
                                 </h3>
-                                <h2 className="title text-white font-bold uppercase mb-6">
+                                <h2 className="title text-white font-bold mb-6">
                                     {data?.testimonials?.title}
                                 </h2>
                                 {data?.testimonials?.items &&

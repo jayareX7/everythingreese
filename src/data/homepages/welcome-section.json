@@ -1,10 +1,12 @@
 {
     "title": "welcomeSection",
-    "pageType": "innerpage",
+    "pageType": "homepage",
     "content": [
         {
             "id": "home-welcome-section",
             "section": "welcome-section",
+            "text": "Text Gopes Here",
+            "quote": "Live For THe Moment",
             "section_title": {
                 "showDescription": false,
                 "align": "center",

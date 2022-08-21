@@ -33,7 +33,7 @@ const SingleTestimonial = ({
             </div>
 
             <div className="blog_content ml-4 md:ml-4 lg:ml-9">
-                <div className="text-orange">{name}</div>
+                <div className="text-blue">{name}</div>
                 <Link to={`/date/${dateSlug}`} className="mb-2 block">
                     <i className="icofont-calendar text-primary mr-2"></i>
                     {dateSlug}

@@ -38,7 +38,7 @@ const BlogCard = ({ title, date, slug, dateSlug, image1 }) => {
                 <Link
                     to={`/${slug}`}
                     className="pl-11 text-sm font-medium sm:uppercase hover:text-primary relative 
-                    text-orange
+                    text-blue
                     after:absolute
                     content-after
                   after:bg-primary

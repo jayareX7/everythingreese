@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import ProductCard from "../../../components/products-card";
 import SectionTitle from "../../../components/title";
 import Button from "../../../components/shared/button";
-import { Link } from "gatsby";
 
 const PopularProductsArea = ({ data }) => {
     return (
@@ -35,14 +34,6 @@ const PopularProductsArea = ({ data }) => {
                                     />
                                 </div>
                             ))}
-                    </div>
-                    <div align="center" className="my-6 md:my-12 mx-auto">
-                        <Link
-                            to={`/products`}
-                            className="text-white button-link font-code inline-block text-center font-bold group hover:opacity-80 text-22base h-73 w-230 leading-73 rounded-22 bg-primary-transparent"
-                        >
-                            View All
-                        </Link>
                     </div>
                 </div>
             </section>

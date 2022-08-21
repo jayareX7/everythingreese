@@ -1,12 +1,15 @@
 {
     "id": "game-05",
-    "title": "Body Oil",
+    "title": "Product Title Five",
     "gameThum": {
         "src": "../../data/images/product/popular-game-thumb5.webp",
         "alt": "Anonymous"
     },
     "categories": ["Cleanser", "Body Oil"],
     "date": "2021-01-02 13:01:00",
+    "price": "2.99",
+    "customOptionName": "Size",
+    "customOption": "Small|Medium|Large",
     "updated": "2021-01-02",
     "size": "98MB",
     "installs": "80,000,000+",
@@ -16,15 +19,15 @@
     "quoteText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the 1500 printer took galley of type scrambled it to make a type specimen book.",
     "images": [
         {
-            "src": "../../data/images/product/game-details-thumb.webp",
+            "src": "../../data/images/product/popular-game-thumb5.webp",
             "alt": "Games Details"
         },
         {
-            "src": "../../data/images/product/game-details-thumb.webp",
+            "src": "../../data/images/product/popular-game-thumb6.webp",
             "alt": "Games Details"
         },
         {
-            "src": "../../data/images/product/game-details-thumb.webp",
+            "src": "../../data/images/product/popular-game-thumb7.webp",
             "alt": "Games Details"
         }
     ],

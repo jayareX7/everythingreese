@@ -26,6 +26,9 @@ export const query = graphql`
             slug
         }
         date
+        price
+        customOptionName
+        customOption
         updated
         size
         installs

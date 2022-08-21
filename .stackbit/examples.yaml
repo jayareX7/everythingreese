@@ -1,6 +1,0 @@
-name: example
-type: data
-label: Example Object
-fields:
-    - type: string
-      name: title

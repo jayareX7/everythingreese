@@ -57,7 +57,7 @@
 
 .about-container {
     margin: 0 auto;
-    background-color: #282120;
+    background-color: #0741ad;
     width: 80%;
     border-radius: 1rem;
 }
@@ -74,11 +74,14 @@
 
 .section-divider {
     width: 100%;
-    background-color: #fad02c;
+    background-color: #b88917;
     height: 0.45rem;
     margin: 5rem 0;
 }
-
+.my-10 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
 .footer-bg {
     background: rgb(40, 33, 32);
     background: linear-gradient(
@@ -112,7 +115,7 @@
         @apply font-breathing text-xl sm:text-1xl md:text-1xl lg:text-6rem xl:text-4xl;
     }
     h2 {
-        @apply font-gatwick text-28base sm:text-32base md:text-xl xl:text-lg;
+        @apply font-breathing text-28base sm:text-32base md:text-xl xl:text-lg;
     }
     h3 {
         @apply font-gatwick text-base md:text-md;

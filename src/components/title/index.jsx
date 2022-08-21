@@ -16,11 +16,9 @@ const SectionTitle = ({
         <div className="section-title">
             <div className="container">
                 <div align={title.align} className="mx-auto">
-                    <h2 className="font-bold text-orange max-w-3xl">
-                        {heading}
-                    </h2>
+                    <h2 className="font-bold text-blue max-w-3xl">{heading}</h2>
                     {title.showDescription && (
-                        <p className="text-orange max-w-xl mt-2 leading-7 text-18base">
+                        <p className="text-blue max-w-xl mt-2 leading-7 text-18base">
                             {description}
                         </p>
                     )}

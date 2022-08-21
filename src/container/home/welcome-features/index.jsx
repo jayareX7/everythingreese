@@ -21,7 +21,7 @@ const WelcomeFeaturesArea = ({ data }) => {
                             src="../../../data/images/others/about-thumb.webp"
                             alt=""
                         />
-                        <p className="text-orange">
+                        <p className="text-white">
                             {" "}
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
@@ -37,7 +37,7 @@ const WelcomeFeaturesArea = ({ data }) => {
                                 src="../../../data/images/icons/infinity-symbol.webp"
                                 alt=""
                             />
-                            <h1 className="mt-10 text-orange">
+                            <h1 className="mt-10 text-white">
                                 Live For The Moment!
                             </h1>
                         </p>

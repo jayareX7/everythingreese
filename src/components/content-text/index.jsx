@@ -10,7 +10,7 @@ const ContentText = ({ data }) => {
             )}
             {data?.items &&
                 data?.items?.map((item, i) => (
-                    <p key={i} className="text-orange leading-8">
+                    <p key={i} className="text-black leading-8">
                         {item?.desc}
                     </p>
                 ))}

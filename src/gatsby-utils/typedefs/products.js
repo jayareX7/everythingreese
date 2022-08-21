@@ -7,6 +7,9 @@ module.exports = `
         gameThum: Image
         updated: String
         size: String
+        price: String
+        customOptionName: String
+        customOption: String
         installs: String
         currentVersion: String
         inAppProducts: String

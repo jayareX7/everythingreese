@@ -77,7 +77,7 @@
             "section_title": {
                 "showDescription": true,
                 "align": "center",
-                "heading": "FEATURED PRODUCTS",
+                "heading": "Featured Products",
                 "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
             }
         },
@@ -87,7 +87,7 @@
             "section_title": {
                 "showDescription": true,
                 "align": "right",
-                "heading": "LATEST BLOG"
+                "heading": "Latest Blog"
             }
         },
         {
@@ -96,7 +96,7 @@
             "section_title": {
                 "showDescription": true,
                 "align": "left",
-                "heading": "UPCOMING EVENTS"
+                "heading": "Upcoming Events"
             }
         }
     ]

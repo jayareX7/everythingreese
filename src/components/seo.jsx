@@ -115,6 +115,12 @@ const SEO = ({
             <meta name="description" content={metaDescription} />
             <meta name="image" content={bannerImage} />
             <link rel="canonical" href={canonicalLink} />
+            <link rel="preconnect" href="<https://app.snipcart.com>" />
+            <link rel="preconnect" href="<https://cdn.snipcart.com>" />
+            <link
+                rel="stylesheet"
+                href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css"
+            />
             <meta
                 name="robots"
                 content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
@@ -149,6 +155,16 @@ const SEO = ({
             <script type="application/ld+json">
                 {JSON.stringify(schemaOrgWebPage)}
             </script>
+            <script
+                async
+                src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"
+            ></script>
+            <div
+                id="snipcart"
+                data-config-modal-style="side"
+                data-api-key="ZjFlYzg0NjAtMjliZC00Y2FkLWEzNTUtYWFjY2Y2YTgyNTRhNjM3NTg0OTYwMTIxMTQ1MDYy"
+                hidden
+            ></div>
         </Helmet>
     );
 };

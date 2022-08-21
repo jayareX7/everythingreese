@@ -8,7 +8,7 @@ import WatchLiveStremingArea from "../container/home/watch-live-streaming";
 import PopularProductsArea from "../container/home/popular-products";
 import TestimonialArea from "../container/home/testimonials";
 import LatestBlogArea from "../container/home/latest-blog";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { normalizedData } from "@utils/functions";
 
 const IndexPage = ({ data }) => {
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
             <SEO title="Home" pathname="/" />
             <HeroArea data={content["hero-section"]} />
             <div className="about-container">
-                <WelcomeFeaturesArea data={welcome["welcome-section"]} />{" "}
+                <WelcomeFeaturesArea data={welcome["welcome-section"]} />
             </div>
             <div className="section-divider"></div>
             <PopularProductsArea
@@ -35,6 +35,15 @@ const IndexPage = ({ data }) => {
                     items: data.allProducts.nodes,
                 }}
             />
+            <div align="center" className="my-6 md:my-12 mx-auto">
+                <Link
+                    to={`/products`}
+                    className="text-white button-link font-code inline-block text-center font-bold group hover:opacity-80 text-22base h-73 w-230 leading-73 rounded-22 bg-primary-transparent"
+                >
+                    View All
+                </Link>
+            </div>
+
             <TestimonialArea data={testimonials["testimonial-section"]} />
             <WatchLiveStremingArea
                 data={{
@@ -100,11 +109,15 @@ export const query = graphql`
             }
         }
         pages3: page(
+            pageType: { eq: homepage }
             title: { eq: "welcomeSection" }
-            pageType: { eq: innerpage }
         ) {
             content {
-                ...PageContentAll
+                section_title {
+                    heading
+                }
+                text
+                quote
             }
         }
         allProducts(sort: { order: DESC, fields: date }, limit: 4) {
