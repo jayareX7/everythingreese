@@ -20,11 +20,21 @@ sections:
   label: Pages
 - type: directory
   path: src/data/inner-pages
+  label: About Us Page
+  create: none
+  match: about-ckc-page.json
+- type: directory
+  path: src/data/inner-pages
   label: Contact Page
   create: none
   match: contact-us-page.json
 - type: heading
   label: Content
+- type: directory
+  path: src/data/blog-post
+  label: Event Post
+  create: documents
+  match: "**/*"
 upload_dir: src/data/images
 public_path: ''
 front_matter_path: ''
