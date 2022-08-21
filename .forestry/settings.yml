@@ -16,6 +16,16 @@ sections:
   match: footer.json
 - type: heading
   label: Front Page (Home)
+- type: directory
+  path: src/data/homepages
+  label: Home
+  create: none
+  match: home.json
+- type: directory
+  path: src/data/homepages
+  label: Welcome Section
+  create: none
+  match: welcome-section.json
 - type: heading
   label: Pages
 - type: directory
@@ -28,6 +38,11 @@ sections:
   label: Contact Page
   create: none
   match: contact-us-page.json
+- type: directory
+  path: src/data/inner-pages
+  label: FAQ's
+  create: documents
+  match: faq.json
 - type: heading
   label: Content
 - type: directory
