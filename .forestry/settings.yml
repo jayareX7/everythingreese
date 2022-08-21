@@ -55,6 +55,11 @@ sections:
   label: Products
   create: documents
   match: "**/*"
+- type: directory
+  path: src/data/testimonials
+  label: Testimonials
+  create: documents
+  match: "**/*"
 upload_dir: src/data/images
 public_path: ''
 front_matter_path: ''
