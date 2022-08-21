@@ -18,6 +18,11 @@ sections:
   label: Front Page (Home)
 - type: heading
   label: Pages
+- type: directory
+  path: src/data/inner-pages
+  label: Contact Page
+  create: none
+  match: contact-us-page.json
 - type: heading
   label: Content
 upload_dir: uploads
