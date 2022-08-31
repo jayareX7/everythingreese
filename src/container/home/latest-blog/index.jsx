@@ -45,6 +45,9 @@ LatestBlogArea.propTypes = {
         items: PropTypes.arrayOf(
             PropTypes.shape({
                 id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+                section_title: PropTypes.shape({
+                    heading: PropTypes.string,
+                }),
             })
         ),
     }),

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import SEO from "@components/seo";
 import Layout from "@layout";
 import HeroArea from "../container/home/hero";
+import HeaderArea from "../container/home/header";
 import WelcomeFeaturesArea from "../container/home/welcome-features";
 import WatchLiveStremingArea from "../container/home/watch-live-streaming";
 import PopularProductsArea from "../container/home/popular-products";
@@ -20,51 +21,55 @@ const IndexPage = ({ data }) => {
     const features = normalizedData(data?.pages4.content || []);
 
     return (
-        <Layout
-            data={{
-                ...globalContent["menu"],
-                ...globalContent["footer"],
-            }}
-        >
-            <SEO title="Home" pathname="/" />
-            <HeroArea data={content["hero-section"]} />
-
-            <PopularProductsArea
+        <>
+            {" "}
+            <HeaderArea data={content["hero-section"]} />
+            <Layout
                 data={{
-                    ...content["popular-products-section"],
-                    items: data.allProducts.nodes,
+                    ...globalContent["menu"],
+                    ...globalContent["footer"],
                 }}
-            />
-            <div align="center" className="my-6 md:my-12 mx-auto">
-                <Link
-                    to={`/products`}
-                    className="text-white button-link font-code inline-block text-center font-bold group hover:opacity-80 text-22base h-73 w-230 leading-73 rounded-22 bg-primary-transparent"
-                >
-                    View All
-                </Link>
-            </div>
+            >
+                <SEO title="Home" pathname="/" />
+                <HeroArea data={content["hero-section"]} />
 
-            <div className="about-container">
-                <WelcomeFeaturesArea data={welcome["welcome-section"]} />
-                <FeaturesArea data={features["features-section"]} />
-            </div>
+                <PopularProductsArea
+                    data={{
+                        ...content["popular-products-section"],
+                        items: data.allProducts.nodes,
+                    }}
+                />
+                <div align="center" className="my-6 md:my-12 mx-auto">
+                    <Link
+                        to={`/products`}
+                        className="text-white button-link font-code inline-block text-center font-bold group hover:opacity-80 text-22base h-73 w-230 leading-73 rounded-22 bg-primary-transparent"
+                    >
+                        View All
+                    </Link>
+                </div>
 
-            <div className="section-divider"></div>
+                <div className="about-container">
+                    <WelcomeFeaturesArea data={welcome["welcome-section"]} />
+                    <FeaturesArea data={features["features-section"]} />
+                </div>
 
-            <TestimonialArea data={testimonials["testimonial-section"]} />
-            <WatchLiveStremingArea
-                data={{
-                    ...content["latest-event-section"],
-                    items: data.allMatch.nodes,
-                }}
-            />
-            <LatestBlogArea
-                data={{
-                    ...content["latest-section"],
-                    items: data.latestPosts.nodes,
-                }}
-            />
-        </Layout>
+                <div className="section-divider"></div>
+
+                <TestimonialArea data={testimonials["testimonial-section"]} />
+                <WatchLiveStremingArea
+                    data={{
+                        ...content["latest-event-section"],
+                        items: data.allMatch.nodes,
+                    }}
+                />
+                <LatestBlogArea
+                    data={{
+                        ...content["latest-section"],
+                        items: data.latestPosts.nodes,
+                    }}
+                />
+            </Layout>
+        </>
     );
 };
 
@@ -115,6 +120,16 @@ export const query = graphql`
                 ...PageContentAll
             }
         }
+        pages3: page(
+            pageType: { eq: homepage }
+            title: { eq: "welcomeSection" }
+        ) {
+            content {
+                section_title
+                text
+                quote
+            }
+        }
         pages4: page(
             title: { eq: "featuresSection" }
             pageType: { eq: homepage }
@@ -126,21 +141,7 @@ export const query = graphql`
                 description
             }
             content {
-                section_title {
-                    heading
-                }
-            }
-        }
-        pages3: page(
-            pageType: { eq: homepage }
-            title: { eq: "welcomeSection" }
-        ) {
-            content {
-                section_title {
-                    heading
-                }
-                text
-                quote
+                section_title
             }
         }
         allProducts(sort: { order: DESC, fields: date }, limit: 4) {

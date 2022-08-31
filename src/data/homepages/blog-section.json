@@ -1,0 +1,11 @@
+{
+    "title": "blogSection",
+    "pageType": "homepage",
+    "content": [
+        {
+            "id": "home-latest-section",
+            "section": "latest-section",
+            "section_title": "Latest Blog"
+        }
+    ]
+}

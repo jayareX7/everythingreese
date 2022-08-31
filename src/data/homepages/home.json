@@ -5,6 +5,7 @@
         {
             "id": "hero-section-content",
             "section": "hero-section",
+            "headerInfo": "Sale on Everything",
             "headings": [
                 {
                     "level": "h1",
@@ -24,80 +25,6 @@
                     "content": "Shop Now"
                 }
             ]
-        },
-        {
-            "id": "home-funfact-section",
-            "section": "funfact-section",
-            "items": [
-                {
-                    "id": "funfact-01",
-                    "countNumber": 8697,
-                    "headings": [
-                        {
-                            "level": "h3",
-                            "content": "TWITCH STREAMS"
-                        }
-                    ]
-                },
-                {
-                    "id": "funfact-02",
-                    "countNumber": 520,
-                    "headings": [
-                        {
-                            "level": "h3",
-                            "content": "TOTAL PRODUCTS"
-                        }
-                    ]
-                },
-                {
-                    "id": "funfact-03",
-                    "countNumber": 5367,
-                    "headings": [
-                        {
-                            "level": "h3",
-                            "content": "YOUTUBE STREAMS"
-                        }
-                    ]
-                },
-                {
-                    "id": "funfact-04",
-                    "countNumber": 249,
-                    "headings": [
-                        {
-                            "level": "h3",
-                            "content": "PRO TEAM"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "home-popular-products-section",
-            "section": "popular-products-section",
-            "section_title": {
-                "showDescription": true,
-                "align": "center",
-                "heading": "Featured Products",
-                "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
-            }
-        },
-        {
-            "id": "home-latest-section",
-            "section": "latest-section",
-            "section_title": {
-                "showDescription": true,
-                "align": "right",
-                "heading": "Latest Blog"
-            }
-        },
-        {
-            "id": "home-latest-event-section",
-            "section": "latest-event-section",
-            "section_title": {
-                "showDescription": true,
-                "align": "left",
-                "heading": "Upcoming Events"
-            }
         }
     ]
 }

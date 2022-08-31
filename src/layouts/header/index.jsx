@@ -16,46 +16,60 @@ const Header = ({ data }) => {
         setOfcanvasOpen((prev) => !prev);
     };
     return (
-        <header className="bg-transparent relative w-full mx-auto z-40">
-            <div
-                className={`header-top "fixed top-0 bg-primary-transparent opacity-90 w-full"
+        <>
+            <header className="bg-transparent relative w-full mx-auto z-40">
+                <div
+                    className={`header-top "fixed top-0 bg-primary-transparent opacity-90 w-full"
                         : ""
                 }`}
-            >
-                <div className="container-50 px-4">
-                    <div className="text-3xl font-semibold leading-none">
-                        <Logo />
+                >
+                    <div className="container">
+                        <div className="container-50 px-4">
+                            <div className="text-3xl font-semibold leading-none">
+                                <Logo />
+                            </div>
+                        </div>{" "}
+                        <div className="profile-icons mx-auto hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+                            <button class="snipcart-customer-signin">
+                                <i className="icofont-users-alt-4"></i>
+                            </button>
+                            <button class="snipcart-customer-signin">
+                                <i className="icofont-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="container-75 px-4 nowrap">
+                        <nav className="bg-transparent flex justify-between items-center py-3">
+                            <MainMenu allmenuData={data?.menu} />
+                            <div className="header-right-action flex items-center">
+                                <button
+                                    onClick={ofcanvasHandaler}
+                                    onKeyDown={ofcanvasHandaler}
+                                    className="flex flex-col space-y-1.5 ml-8 lg:hidden"
+                                >
+                                    <span className="line h-0.5 w-6 inline-block bg-white"></span>
+                                    <span className="line h-0.5 w-6 inline-block bg-white"></span>
+                                    <span className="line h-0.5 w-6 inline-block bg-white"></span>
+                                </button>
+                                <MobileNavMenu
+                                    MobilemenuData={data.menu}
+                                    ofcanvasOpen={ofcanvasOpen}
+                                    ofcanvasHandaler={ofcanvasHandaler}
+                                />
+                            </div>
+                        </nav>
                     </div>
                 </div>
-                <div className="container-75 px-4 nowrap">
-                    <nav className="bg-transparent flex justify-between items-center py-3">
-                        <MainMenu allmenuData={data?.menu} />
-                        <div className="header-right-action flex items-center">
-                            <button
-                                onClick={ofcanvasHandaler}
-                                onKeyDown={ofcanvasHandaler}
-                                className="flex flex-col space-y-1.5 ml-8 lg:hidden"
-                            >
-                                <span className="line h-0.5 w-6 inline-block bg-white"></span>
-                                <span className="line h-0.5 w-6 inline-block bg-white"></span>
-                                <span className="line h-0.5 w-6 inline-block bg-white"></span>
-                            </button>
-                            <MobileNavMenu
-                                MobilemenuData={data.menu}
-                                ofcanvasOpen={ofcanvasOpen}
-                                ofcanvasHandaler={ofcanvasHandaler}
-                            />
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </header>
+            </header>
+        </>
     );
 };
 
 Header.propTypes = {
     data: PropTypes.shape({
         menu: PropTypes.arrayOf(PropTypes.shape({})),
+        headerInfo: PropTypes.string,
     }),
 };
 

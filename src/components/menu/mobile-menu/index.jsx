@@ -114,15 +114,13 @@ const MobileNavMenu = ({ MobilemenuData, ofcanvasOpen, ofcanvasHandaler }) => {
                         );
                     })}
                 </ul>
-                <div className="action-button text-center">
-                    <Button path="/" shape="square2xl" className="text-white">
-                        SIGN UP
-                        <StaticImage
-                            className="align-middle ml-3"
-                            src="../../../data/images/icons/arrrow-icon2.webp"
-                            alt=""
-                        />
-                    </Button>
+                <div className="profile-menu-icons">
+                    <button class="snipcart-customer-signin profile-menu-button">
+                        <i className="icofont-users-alt-4"></i>
+                    </button>
+                    <button class="snipcart-customer-signin profile-menu-button">
+                        <i className="icofont-bag"></i>
+                    </button>
                 </div>
             </div>
         </div>

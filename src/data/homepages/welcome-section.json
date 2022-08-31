@@ -7,12 +7,7 @@
             "section": "welcome-section",
             "text": "Text Gopes Here",
             "quote": "Live For THe Moment",
-            "section_title": {
-                "showDescription": false,
-                "align": "center",
-                "heading": "YOU ARE MOST WELCOME IN GAMING WORLD.",
-                "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
-            }
+            "section_title": "YOU ARE MOST WELCOME IN GAMING WORLD."
         }
     ]
 }

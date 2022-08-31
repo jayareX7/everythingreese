@@ -1,0 +1,11 @@
+{
+    "title": "productSection",
+    "pageType": "homepage",
+    "content": [
+        {
+            "id": "home-popular-products-section",
+            "section": "popular-products-section",
+            "section_title": "Featured Products"
+        }
+    ]
+}

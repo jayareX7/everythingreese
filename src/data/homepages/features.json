@@ -7,12 +7,7 @@
             "section": "features-section",
             "text": "Text Gopes Here",
             "quote": "Live For THe Moment",
-            "section_title": {
-                "showDescription": false,
-                "align": "center",
-                "heading": "Cruelty Free",
-                "description": "When unknown printer took type and scrambled it to make type specimen book centuries,"
-            }
+            "section_title": "Cruelty Free"
         }
     ],
     "items": [

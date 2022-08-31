@@ -1,0 +1,11 @@
+{
+    "title": "eventSection",
+    "pageType": "homepage",
+    "content": [
+        {
+            "id": "home-latest-event-section",
+            "section": "latest-event-section",
+            "section_title": "Upcoming Events"
+        }
+    ]
+}

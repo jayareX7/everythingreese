@@ -12,10 +12,11 @@ module.exports = `
     type PageContent {
         id: ID!
         section: String!
+        headerInfo: String
         headings: [Heading]
         texts: [Text]
         items: [Item]
-        section_title: SectionTitle
+        section_title: String
         images: [Image]
         date: BlogDate!
         buttons: [Button]
@@ -47,5 +48,5 @@ module.exports = `
         title: String
         link: String
     }
-    
+
 `;

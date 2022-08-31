@@ -70,6 +70,7 @@ WelcomeFeaturesArea.propTypes = {
     data: PropTypes.shape({
         section_title: PropTypes.shape({
             heading: PropTypes.string,
+            description: PropTypes.string,
         }),
         items: PropTypes.arrayOf(
             PropTypes.shape({

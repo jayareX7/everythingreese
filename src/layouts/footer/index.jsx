@@ -35,7 +35,7 @@ const Footer = ({ data }) => {
                     </div>
                 </div>
 
-                <div className="footer-bottom bg-secondary-brown">
+                <div className="footer-bottom bg-secondary-black">
                     <div className="container">
                         <div className=" flex flex-col md:flex-row md:justify-between items-center py-6">
                             <div className="mx-auto">
