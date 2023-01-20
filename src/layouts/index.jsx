@@ -11,7 +11,7 @@ const Layout = ({ data, children }) => {
         <div
             className="wrapper"
             style={{
-                backgroundImage: `url(${BodyImage})`,
+                background: "#FFF6EA",
             }}
         >
             <Header data={data} />

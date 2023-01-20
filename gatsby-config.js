@@ -58,6 +58,13 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `backgrounds`,
+                path: `${__dirname}/src/data/images/hero`, // wherever background images are stored
+            },
+        },
+        {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [

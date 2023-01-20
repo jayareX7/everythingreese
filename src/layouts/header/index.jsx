@@ -24,23 +24,8 @@ const Header = ({ data }) => {
                 }`}
                 >
                     <div className="container">
-                        <div className="container-50 px-4">
-                            <div className="text-3xl font-semibold leading-none">
-                                <Logo />
-                            </div>
-                        </div>{" "}
-                        <div className="profile-icons mx-auto hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-                            <button class="snipcart-customer-signin">
-                                <i className="icofont-users-alt-4"></i>
-                            </button>
-                            <button class="snipcart-customer-signin">
-                                <i className="icofont-bag"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="container-75 px-4 nowrap">
                         <nav className="bg-transparent flex justify-between items-center py-3">
+                            <Logo />
                             <MainMenu allmenuData={data?.menu} />
                             <div className="header-right-action flex items-center">
                                 <button
@@ -59,6 +44,17 @@ const Header = ({ data }) => {
                                 />
                             </div>
                         </nav>
+
+                        <div className="text-3xl font-semibold leading-none"></div>
+
+                        <div className="profile-icons mx-auto hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
+                            <button class="snipcart-customer-signin">
+                                <i className="icofont-users-alt-4"></i>
+                            </button>
+                            <button class="snipcart-customer-signin">
+                                <i className="icofont-bag"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </header>

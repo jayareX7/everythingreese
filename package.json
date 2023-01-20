@@ -13,6 +13,7 @@
     "disqus-react": "^1.1.2",
     "flotiq-components-react": "^1.0.0",
     "gatsby": "^4.2.0",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-breadcrumb": "^12.2.0",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-manifest": "^4.0.0",
@@ -37,7 +38,9 @@
     "react-helmet": "^6.1.0",
     "react-modal-video": "^1.2.8",
     "react-portal": "^4.2.1",
+    "react-slick": "^0.29.0",
     "react-visibility-sensor": "^5.1.1",
+    "styled-components": "^5.3.6",
     "swiper": "^7.1.0",
     "tailwind-pseudo-elements": "^0.4.0"
   },

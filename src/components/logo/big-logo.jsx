@@ -4,9 +4,14 @@ import React from "react";
 
 const BigLogo = () => {
     return (
-        <Link to="/">
-            <StaticImage src="../../data/images/big-logo.webp" alt="Reese" />
-        </Link>
+        <div className="logo">
+            <Link to="/">
+                <StaticImage
+                    src="../../data/images/big-logo.webp"
+                    alt="Reese"
+                />
+            </Link>
+        </div>
     );
 };
 export default BigLogo;
