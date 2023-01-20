@@ -10,6 +10,7 @@ const LandingHero = () => {
                     src="../../data/images/landing-hero.webp"
                     alt="Reese"
                     objectFit="cover"
+                    className="landing-page"
                 />
             </Link>
         </div>

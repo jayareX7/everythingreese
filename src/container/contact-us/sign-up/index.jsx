@@ -8,7 +8,7 @@ const SignUpArea = ({ data }) => {
     return (
         <section className="sign-up-section pt-16 md:pt-24">
             <div className="container">
-                <h2 className="center primary-orange">Welcome</h2>
+                <h1 className="center primary-orange">Welcome</h1>
                 <br />
                 <p className="primary-brown">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
