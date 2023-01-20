@@ -4,7 +4,6 @@ export const query = graphql`
     fragment PageContentAll on PageContent {
         section
         headerInfo
-        section_title
         headings {
             content
             level
