@@ -26,8 +26,6 @@ const AboutPage = ({ data, location, pageContext }) => {
                 location={location}
                 title="About Us"
             />
-
-            <TestimonialSlider data={testimonials["testimonial-section"]} />
         </Layout>
     );
 };
