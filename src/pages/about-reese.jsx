@@ -26,7 +26,6 @@ const AboutPage = ({ data, location, pageContext }) => {
                 location={location}
                 title="About Us"
             />
-            <AboutUsOurStudioArea data={content["our-studio-section"]} />
 
             <TestimonialSlider data={testimonials["testimonial-section"]} />
         </Layout>
