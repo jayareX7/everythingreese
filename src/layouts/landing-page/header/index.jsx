@@ -7,7 +7,7 @@ const Header2 = ({ data }) => {
         <Fragment>
             <div className="header-top">
                 <div className="left bold text-primary-white">
-                    <h4 style={{ margin: "0.4rem 0px 0px 1rem;" }}>Reese C</h4>
+                    <h4 style={{ margin: "0.4rem 0px 0px 1rem" }}>Reese C</h4>
                 </div>
 
                 <div className="right footer_widget_list text-white sm:col-span-6 lg:col-span-4 lg:mr-12">

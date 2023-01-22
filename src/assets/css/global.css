@@ -133,6 +133,11 @@
     background-image: url("../../data/images/others/btn-signup.webp");
 }
 
+.w-btn {
+    padding: 1rem 1rem 2.1rem 1rem;
+    float: right;
+}
+
 @layer base {
     body {
         @apply font-code;
