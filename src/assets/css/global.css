@@ -302,14 +302,14 @@
         width: 100%;
         float: right;
         opacity: 88%;
-        margin-top: 2rem;
+        margin-top: 8rem;
     }
     p {
         @apply text-body mb-4 last:mb-0 text-white;
-        font-size: 0.6rem;
+        font-size: 1.3rem;
     }
     .landing-page {
-        height: 27rem;
+        height: 80rem;
     }
 }
 @media (min-width: 768px) {
@@ -325,17 +325,17 @@
         background: #fff6ea;
         padding: 2rem;
         border-radius: 2rem;
-        width: 60%;
+        width: 100%;
         float: right;
         opacity: 88%;
-        margin-top: 6rem;
+        margin-top: 12rem;
     }
     p {
         @apply text-body mb-4 last:mb-0 text-white;
-        font-size: 0.7rem;
+        font-size: 1.4rem;
     }
     .landing-page {
-        height: 36rem;
+        height: 65rem;
     }
 }
 @media (min-width: 992px) {
@@ -352,17 +352,17 @@
         background: #fff6ea;
         padding: 2rem;
         border-radius: 2rem;
-        width: 60%;
+        width: 65%;
         float: right;
         opacity: 88%;
-        margin-top: 17rem;
+        margin-top: 12rem;
     }
     p {
         @apply text-body mb-4 last:mb-0 text-white;
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .landing-page {
-        height: 55rem;
+        height: 63rem;
     }
 }
 @media (min-width: 1200px) {
@@ -380,10 +380,14 @@
         background: #fff6ea;
         padding: 2rem;
         border-radius: 2rem;
-        width: 60%;
+        width: 65%;
         float: right;
         opacity: 88%;
-        margin-top: 25rem;
+        margin-top: 20rem;
+    }
+    p {
+        @apply text-body mb-4 last:mb-0 text-white;
+        font-size: 1.3rem;
     }
     .landing-page {
         height: 70rem;
@@ -405,7 +409,7 @@
         background: #fff6ea;
         padding: 2rem;
         border-radius: 2rem;
-        width: 60%;
+        width: 65%;
         float: right;
         opacity: 88%;
         margin-top: 20rem;
@@ -434,7 +438,7 @@
         background: #fff6ea;
         padding: 5rem;
         border-radius: 2rem;
-        width: 60%;
+        width: 65%;
         float: right;
         opacity: 88%;
         margin-top: 35rem;
