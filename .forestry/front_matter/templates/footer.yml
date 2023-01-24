@@ -1,0 +1,36 @@
+---
+label: Footer
+hide_body: true
+fields:
+- type: text
+  name: id
+  label: id
+- type: text
+  name: section
+  label: section
+- type: field_group_list
+  name: footer
+  label: footer
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: text
+    name: text
+    label: text
+  - type: field_group_list
+    name: socials
+    label: socials
+    fields:
+    - type: number
+      name: id
+      label: id
+    - type: text
+      name: icon
+      label: icon
+    - type: text
+      name: link
+      label: link
+    - type: text
+      name: title
+      label: title
