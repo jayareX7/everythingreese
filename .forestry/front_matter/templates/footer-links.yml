@@ -13,18 +13,12 @@ fields:
   label: footer
   fields:
   - type: text
-    name: id
-    label: id
-  - type: text
     name: text
     label: text
   - type: field_group_list
     name: socials
     label: socials
     fields:
-    - type: number
-      name: id
-      label: id
     - type: text
       name: icon
       label: icon
