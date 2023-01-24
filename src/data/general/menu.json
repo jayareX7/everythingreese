@@ -5,17 +5,29 @@
     {
       "id": "menu-1",
       "text": "Home",
-      "link": "/"
+      "link": "/",
+      "submenu": [
+
+      ]
     },
     {
       "id": "menu-2",
       "text": "About Reese",
-      "link": "/about-reese"
+      "link": "/about-reese",
+      "submenu": [
+
+      ]
     },
     {
       "id": "menu-3",
       "text": "Body Butter",
-      "link": "/products"
+      "link": "/products",
+      "submenu": [
+        {
+          "link": "test",
+          "text": "Test"
+        }
+      ]
     },
     {
       "id": "menu-4",
