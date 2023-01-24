@@ -15,6 +15,11 @@ fields:
   - name: submenu
     type: field_group_list
     fields:
+    - name: id
+      type: text
+      config:
+        required: false
+      label: id
     - name: text
       type: text
       config:
