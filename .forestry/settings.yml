@@ -9,11 +9,10 @@ sections:
 - type: document
   path: src/data/general/menu.json
   label: Menu Links
-- type: directory
-  path: src/data/general
+- type: document
+  path: src/data/general/footer.json
   label: Footer Links
-  create: none
-  match: footer.json
+  match: "**/*"
 - type: heading
   label: Front Page (Home)
 - type: directory
