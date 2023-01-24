@@ -1,0 +1,23 @@
+---
+label: Menu Links
+hide_body: true
+fields:
+- type: text
+  name: id
+  label: id
+- type: text
+  name: section
+  label: section
+- type: field_group_list
+  name: menu
+  label: menu
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: text
+    name: text
+    label: text
+  - type: text
+    name: link
+    label: link
