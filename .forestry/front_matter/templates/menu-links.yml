@@ -13,9 +13,6 @@ fields:
   label: menu
   fields:
   - type: text
-    name: id
-    label: id
-  - type: text
     name: text
     label: text
   - type: text
