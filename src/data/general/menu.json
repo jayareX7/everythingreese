@@ -24,7 +24,7 @@
       "link": "/products",
       "submenu": [
         {
-          "link": "test",
+          "link": "/test",
           "text": "Test"
         }
       ]
