@@ -12,5 +12,23 @@ fields:
   - type: text
     name: link
     label: link
+- name: submenu
+  type: field_group_list
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: text
+  - name: link
+    type: text
+    config:
+      required: false
+    label: link
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: submenu
 pages:
 - src/data/general/menu.json
