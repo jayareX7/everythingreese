@@ -1,109 +1,121 @@
 {
-    "id": "footer-data",
-    "section": "footer",
-    "footer": [
+  "id": "footer-data",
+  "section": "footer",
+  "footer": [
+    {
+      "id": "footer-1",
+      "text": "It long estabhed fact that reader will ditracted the readable content looking using readable.",
+      "socials": [
         {
-            "id": "footer-1",
-            "text": "It long estabhed fact that reader will ditracted the readable content looking using readable.",
-            "socials": [
-                {
-                    "id": 1,
-                    "icon": "icofont-facebook",
-                    "link": "https://www.facebook.com",
-                    "title": "facebook"
-                },
-                {
-                    "id": 2,
-                    "icon": "icofont-dribbble",
-                    "link": "https://dribbble.com",
-                    "title": "dribbble"
-                },
-                {
-                    "id": 3,
-                    "icon": "icofont-youtube-play",
-                    "link": "https://www.youtube.com",
-                    "title": "youtube"
-                },
-                {
-                    "id": 4,
-                    "icon": "icofont-twitter",
-                    "link": "https://www.twitter.com",
-                    "title": "twitter"
-                }
-            ]
+          "id": 1,
+          "icon": "icofont-facebook",
+          "link": "https://www.facebook.com",
+          "title": "facebook"
         },
         {
-            "id": "footer-2",
-            "title": "CONTACT",
-            "contact_info": [
-                {
-                    "id": "contact_info-21",
-                    "title": "Location",
-                    "text": "136 Harding Ave Wheeling, West Virginia"
-                },
-                {
-                    "id": "contact_info-22",
-                    "title": "Phone",
-                    "text": "00 (62) 632 867 4497"
-                }
-            ]
+          "id": 2,
+          "icon": "icofont-dribbble",
+          "link": "https://dribbble.com",
+          "title": "dribbble"
         },
         {
-            "id": "footer-3",
-            "title": "Support",
-            "list": [
-                {
-                    "id": "footer-follow-01",
-                    "text": "Frequently Asked Questions",
-                    "link": "/faq's"
-                },
-                {
-                    "id": "footer-follow-02",
-                    "text": "Terms & Conditions",
-                    "link": "https://dribbble.com"
-                },
-                {
-                    "id": "footer-follow-03",
-                    "text": "Shipping Policy",
-                    "link": "https://dribbble.com"
-                },
-                {
-                    "id": "footer-follow-04",
-                    "text": "Privacy Policy",
-                    "link": "https://dribbble.com"
-                }
-            ]
+          "id": 3,
+          "icon": "icofont-youtube-play",
+          "link": "https://www.youtube.com",
+          "title": "youtube"
         },
         {
-            "id": "footer-4",
-            "title": "Links",
-            "list": [
-                {
-                    "id": "footer-follow-01",
-                    "text": "Products",
-                    "link": "https://youtube.com/"
-                },
-                {
-                    "id": "footer-follow-02",
-                    "text": "Events",
-                    "link": "https://dribbble.com"
-                },
-                {
-                    "id": "footer-follow-03",
-                    "text": "Interactive Media",
-                    "link": "https://dribbble.com"
-                },
-                {
-                    "id": "footer-follow-04",
-                    "text": "Motion Design",
-                    "link": "https://dribbble.com"
-                },
-                {
-                    "id": "footer-follow-05",
-                    "text": "References",
-                    "link": "https://dribbble.com"
-                }
-            ]
+          "id": 4,
+          "icon": "icofont-twitter",
+          "link": "https://www.twitter.com",
+          "title": "twitter"
         }
-    ]
+      ]
+    },
+    {
+      "id": "footer-2",
+      "title": "CONTACT",
+      "contact_info": [
+        {
+          "id": "contact_info-21",
+          "title": "Location",
+          "text": "136 Harding Ave Wheeling, West Virginia"
+        },
+        {
+          "id": "contact_info-22",
+          "title": "Phone",
+          "text": "00 (62) 632 867 4497"
+        }
+      ],
+      "text": "",
+      "socials": [
+
+      ]
+    },
+    {
+      "id": "footer-3",
+      "title": "Support",
+      "list": [
+        {
+          "id": "footer-follow-01",
+          "text": "Frequently Asked Questions",
+          "link": "/faq's"
+        },
+        {
+          "id": "footer-follow-02",
+          "text": "Terms & Conditions",
+          "link": "https://dribbble.com"
+        },
+        {
+          "id": "footer-follow-03",
+          "text": "Shipping Policy",
+          "link": "https://dribbble.com"
+        },
+        {
+          "id": "footer-follow-04",
+          "text": "Privacy Policy",
+          "link": "https://dribbble.com"
+        }
+      ],
+      "text": "",
+      "socials": [
+
+      ]
+    },
+    {
+      "id": "footer-4",
+      "title": "Links",
+      "list": [
+        {
+          "id": "footer-follow-01",
+          "text": "Products",
+          "link": "https://youtube.com/"
+        },
+        {
+          "id": "footer-follow-02",
+          "text": "Events",
+          "link": "https://dribbble.com"
+        },
+        {
+          "id": "footer-follow-03",
+          "text": "Interactive Media",
+          "link": "https://dribbble.com"
+        },
+        {
+          "id": "footer-follow-04",
+          "text": "Motion Design",
+          "link": "https://dribbble.com"
+        },
+        {
+          "id": "footer-follow-05",
+          "text": "References",
+          "link": "https://dribbble.com"
+        }
+      ],
+      "text": "",
+      "socials": [
+
+      ]
+    }
+  ]
 }
