@@ -25,7 +25,8 @@
       "submenu": [
         {
           "link": "/test",
-          "text": "Test"
+          "text": "Test",
+          "id": "test"
         }
       ]
     },
