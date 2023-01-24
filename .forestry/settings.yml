@@ -5,6 +5,13 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: heading
+  label: Menu
+- type: directory
+  path: src/data/general
+  label: Home
+  create: none
+  match: menu.json
+- type: heading
   label: General Config
 - type: document
   path: src/data/general/menu.json
