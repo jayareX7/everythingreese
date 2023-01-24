@@ -2,12 +2,6 @@
 label: Footer Links
 hide_body: true
 fields:
-- type: text
-  name: id
-  label: id
-- type: text
-  name: section
-  label: section
 - type: field_group_list
   name: footer
   label: footer
